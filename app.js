@@ -1,1 +1,4 @@
-document.title = " lalalaslasdfjklhawkljvbhkajshfjkleshbkjasefhbakljg";
+const title = document.getElementById("title");
+
+console.log(title.id);
+console.log(title.className);
