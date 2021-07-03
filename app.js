@@ -1,4 +1,4 @@
-const title = document.getElementById("title");
+const title = document.getElementsByClassName("title_class");
 
-console.log(title.id);
-console.log(title.className);
+console.log(typeof(title)); // object
+Array.from(title).forEach(e => e.innerText = 'test');
