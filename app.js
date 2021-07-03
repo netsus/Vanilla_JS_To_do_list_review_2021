@@ -1,4 +1,3 @@
-const title = document.getElementsByClassName("title_class");
+const title = document.querySelector(".hello h1:first-child")
 
-console.log(typeof(title)); // object
-Array.from(title).forEach(e => e.innerText = 'test');
+console.log(title);
