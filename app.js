@@ -1,14 +1,16 @@
 const title = document.querySelector(".hello h1:first-child")
 
 
-function handleTitleClick() {
-    console.log("title was clicked!");
+function handelMouseEnter() {
+    title.innerText = "Mouse is here!"
 }
 
-function changeColor() {
-    title.style.color = "blue"; // title 클릭 -> 파란색으로 변경
+function handelMouseLeave(){
+    title.innerText = "Mouse is gone!"
 }
 
-title.addEventListener("click", handleTitleClick);
+// 마우스가 해당 element 위에 있을 때
+title.addEventListener("mouseenter", handelMouseEnter); 
 
-title.addEventListener("click", changeColor);
+// 마우스가 해당 element를 떠날 때
+title.addEventListener("mouseleave", handelMouseLeave);
