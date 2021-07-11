@@ -1,0 +1,8 @@
+h1 {
+    color:cornflowerblue;
+    transition: 0.3s ease-in-out;
+}
+
+.clicked {
+    color: tomato;
+}
